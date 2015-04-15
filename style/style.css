@@ -1,0 +1,276 @@
+
+/* STYLE GUIDE */
+
+/*EAL color codes
+Dark green #00747b
+middle green #289199
+light green #74b7c0i
+
+lime #cce032
+aubergine: #640046
+
+Dark gray: #4D4D4D
+mid-gray: #666666
+light gray: #7F7F7F
+lightest gray: #cecdcb
+
+Document font: Lato 600 for headlines
+			   Lato 400 for body copy.
+Alternative font family: sans serif.
+
+/* ------- TABLE OF CONTENTS ------*/
+	  /* general HTML tag styles  
+	  		h1, h2, p, nav, footer
+	  
+	  /* Classes and IDs 
+	  
+	  /* Classes and IDs specific for home page
+	  
+	  /* Button styles
+
+/*  ---------- CSS Styles ------------*/
+
+/* HTML tag styles */
+body, h1, h2, p, img {
+	margin: 0; /*Removes default body, h1 and p tag margins*/
+	font-family: 'Lato', sans-serif; /*sets font for whole site*/
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 32px;
+	color: #640046;
+	line-height: 60px;
+	font-weight: 600;
+	padding: 50px 0 50px 80px;
+	text-align: left;
+}
+h3 {
+	margin: 40px 0 20px 80px;
+	text-align: left;
+}
+p {
+	line-height: 130%;
+}
+nav {
+	position: absolute;
+	top: 100px;
+	left: 880px;
+}
+	nav li {
+		list-style-type: none;
+		display: inline;
+		width: 200px;
+	}
+	nav a {
+		color: #fff;
+		text-decoration: none;
+		padding: 0 10px 0;
+	}
+	nav a:hover {
+		text-decoration: underline;
+	}
+footer {
+	clear: both;
+	background-color: #cecdcb;
+	float: left; /*Fixes the collapse*/
+	width: 1280px;
+}
+	footer li {
+		list-style-type: none;
+		text-align: left;
+		line-height: 130%;
+	}
+	footer a {
+		text-decoration: none;
+		color: #323131;
+	}
+		footer a:hover {
+			text-decoration:underline;
+		}
+
+table {
+	width:1100px;
+}
+	td {
+	padding: 20px 50px;
+    }
+aside {
+	float: right;
+	width: 300px;
+	background-color: #7F7F7F;
+	text-align: center;
+	
+}
+	aside p {
+	  text-align: center;
+  }
+  	aside h3 {
+		color: #640046;
+	}
+	aside h4 {
+		text-align: center;
+	}
+	aside img {
+		border-radius: 81px;
+		}
+
+/*------------------------ CLASSES AND IDs ---------------     */
+#logo {
+	position: absolute; /*places logo on top of the image*/
+	left: 150px;
+	top: 50px;	
+}
+
+.column {
+	float: left;
+	width: 380px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#main-content-container {
+	border-left: 81px solid #640046;
+	/*float: left;*/ /*fix float collapse*/
+	margin-top: -40px; /*Fixes the white gap between blocks*/
+	padding-bottom: 40px;
+	width: 800px;
+	padding-left: 40px;
+}
+
+#benefits-columns {
+	border-left: 81px solid #640046;
+	float: left; /*fix float collapse*/
+	margin-top: -40px; /*Fixes the white gap between blocks*/
+	padding-bottom: 40px;
+}
+.benefit {
+	text-align:left;
+	padding: 5px 0 20px 80px;
+}
+.programes {
+	color:#640046;
+	padding-left: 80px;
+}
+.more-about-program {
+	width: 100px;
+	}
+footer .column:first-child {
+	padding-left: 80px;
+}
+footer .column ul {
+	padding-left: 80px;
+	}
+	
+.long-paragraph {
+	width: 900px;
+	padding-left: 80px;
+}
+
+/* ------ HOME PAGE STYLES (used only on home page)--------------------*/
+#target-group-container {
+	position: absolute;
+	top: 346px;
+}
+.target-group-column {
+	width: 426.6px;
+	float: left;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#new-student-header, #current-student-header, #company-header {
+ font-size: 24px;
+ padding:3px;
+ text-align: center;
+}
+#new-student-header {
+	background-color: #00747b; /*Darkest green*/
+	color: #fff;
+}
+#current-student-header {
+	background-color: #289199; /*Mid green*/
+	color: #fff;
+}
+#company-header {
+	background-color: #74b7c0; /*Lightest green*/
+	color: #fff;
+}
+#new-student-txt {
+	background-color: #4D4D4D; /*Darkest gray*/
+	color: #fff;
+	padding: 20px;
+	height: 80px;
+}
+#current-student-txt {
+	background-color: #666666; /*Mid-gray*/
+	color: #fff;
+	padding: 20px;
+	height: 80px;
+}
+#company-txt {
+	background-color: #7F7F7F; /*Lightest gray*/
+	color: #fff;
+	padding: 20px;
+	height: 80px;
+}
+#wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative; /*to get proper logo position*/
+	/*background-color: #cecdcb;*/
+	
+}
+#copyright {
+	height: 150px;
+	margin-top: -5px;
+}
+.icon {
+	padding: 15px;
+	margin-top: 35px;
+	}
+.icon-circle {
+	background-color: rgba(248,246,246,0.9);
+	border-radius: 150px;
+	height: 300px;
+	width: 300px;
+	margin: 5px auto;
+	}
+#wolf-icon {
+	padding: 15px 0 0 30px;
+	margin-top: 35px;
+	}
+/*--------end of Home page styles--------*/
+
+/*----------Graphical elements-----------*/
+#main-header .circle {
+	background-color: #640046; }
+
+/*------------------BUTTON STYLES------------------*/
+
+.circle {
+	height: 80px;
+	width: 80px;
+	background-color: #cce032;
+	border-style: none;
+	border-radius: 50px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.go-circle {
+	line-height: 80px;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+}
+.circle a:hover {
+	font-size: 28px;
+	font-weight: bold;
+}
+td .circle {
+	text-align: center;
+}
+.target-group-column .circle {
+	top: -40px;
+	}
